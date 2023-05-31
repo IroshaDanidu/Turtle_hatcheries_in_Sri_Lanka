@@ -1,0 +1,777 @@
+*{
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.logoo img{
+    position: absolute;
+    width: 8%;
+    height: 60px;
+    margin-top: 4px;
+    margin-left: 35px;
+
+}
+
+
+.header ul li{
+    display: inline-block;
+}
+
+.header ul li .conus{
+width: 200%;
+margin-right: -450%;
+    
+}
+
+.header ul li img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: -6px;
+    margin-right: -800%;
+    
+    
+   
+}
+
+.header {
+    color: #fff;
+    background-color: #023e7a;
+    font-size: 14px;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 14px;
+    
+}
+.header li h1{
+    position: relative;
+    margin-left: -50%;
+    
+   
+    
+}
+.header h1::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background-color: rgb(200, 199, 206);
+    bottom: -10px;
+    left: 130%;
+    transform: translateX(-50%);
+    animation: animate 2s linear infinite;
+}
+@keyframes animate{
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+
+.navbar .submenu {
+    display: inline-block;
+    position: relative;
+}
+.navbar .submenu .submenu-con{
+    display: none;
+    position: absolute;
+    width: 80%;
+    background-color: #1e0d74;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 20px;
+    margin-left: 32px;
+    
+}
+
+.navbar .submenu:hover .submenu-con {
+    display: block;
+}
+
+.navbar{
+    background-color: #fff;
+    padding-top: 2px;
+    /* padding-bottom: 1px; */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    /* position: sticky; */
+    /* background-color: rgb(72, 73, 75); */
+    /* border-radius: 10px; */
+    padding-left: 100px;
+    top: 0;
+    bottom: 0;
+    border-bottom: 4px solid #0072a8;
+    
+    
+}
+.header .fblogo{
+    display: inline-block;
+}
+
+nav{
+    flex: 1;
+    text-align: center;
+    
+}
+.navbar nav .black ul{
+    background: #000;
+}
+
+/* drop down bar  */
+
+.container{
+    width: 100%;
+    height: 100vh;
+    /* padding-left: 50px;
+    padding-right: 50px; */
+    /* background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.7)),url(image/turtlefarm-ANCGCJ.jpg); */
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    
+    
+}
+nav ul li ul{
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    margin-left: -40px;
+    
+    
+    
+}
+
+nav ul li:hover ul{
+    display: block;
+}
+nav ul li ul li{
+    line-height: 1;
+    width: 190px;
+    border-radius: 5px;
+    padding: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+   
+}
+
+nav ul li ul li a{
+  
+  margin-bottom: 2;
+  
+  float: left;
+  letter-spacing: 6px;
+  background-color: #a9d1f8;
+  padding-left: 50px;
+  padding-right: 30px;
+  text-align: center;
+    
+}
+
+nav ul li ul li a:hover{
+    background-color: #fff;
+}
+
+
+/* end drop bar */
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 24px;
+    padding-top: 24px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#000;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 10px 10px;
+    /* border-radius: 10px; */
+    letter-spacing: 1px;
+    z-index: 1;
+}
+ 
+.navbar a:hover,
+.navbar a .active{
+    /* color: blue; */
+    /* border-bottom: 1px solid blue; */
+    color: blue;
+    
+
+    }
+      
+
+nav ul li a::after{
+     content: '';
+   
+    width: 0;
+    height: 3px;
+    background: rgb(8, 199, 247);
+    margin: auto;
+    display: block;
+}
+
+nav ul li a:hover::after{
+    margin-top: 8px;
+    width: 100%;
+    transition: width 0.3s linear;
+
+}
+nav ul li a:hover{
+    color: rgb(7, 40, 90);
+    cursor: pointer;
+    
+}
+
+.mobnave{ 
+    display: none;
+    cursor: pointer;
+}
+.mobnave h3{
+    padding: 4px;
+    background: #0e335b;
+    color: #fff;
+    width: 100%;
+}
+.mobnave ul li {
+    padding-left: 2px;
+    display: block;
+}
+.mobnave ul li a {
+    color: #0c2846;
+    
+    
+   
+}
+
+@media screen and (max-width: 600px){
+    .container{width: 100%;}
+    .mobnave {display: block;}
+    nav ul {display: none;}
+}
+@media screen and (max-width: 768px){
+    .profile-con
+    {flex-direction: column;}
+    .content
+    {flex-direction: column;}
+    
+}
+
+
+@media screen and (max-width: 600px){
+    .row .name1{width: 100%;
+        text-align: left;
+        margin: 0;
+        font-size: 40px;}
+    }
+
+@media screen and (max-width: 600px){
+    
+}
+    
+nav ul li a{
+    font-size:16px
+}
+
+
+/* END NAV BAR */
+
+/* 
+body benthota */
+
+
+.benthota-photo{
+    height: 100vh;
+    padding-top: 80px;
+     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url(image/Turtle-Hatchery-1920.jpg); 
+   
+    
+}
+.benthota-photo h1{
+    color: #fff; 
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 65px;
+    letter-spacing: 15px;
+    padding-top: 20%;
+    
+
+}
+
+
+.benthota-photo .ben-gala .gallery_photo{
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px #023e7a;
+    position: absolute;
+    z-index: 10;
+    outline-offset: 10px;
+    transition: all 0.2s;
+    box-sizing: 20px;
+    border-color: #1e0d74;
+    margin-top: 32%
+
+    
+}
+
+.benthota-photo .ben-gala .gallery_photo:hover{
+    outline: 10px solid #1374f3;
+    transform: scale(1.05) translateY(-20px);
+    z-index: 20;
+}
+.benthota-photo .ben-gala{
+    width: 1000px;
+   margin-left: 24%;
+    
+  position: relative;
+}
+
+.benthota-photo .ben-gala:hover .benthota-photo .ben-gala .gallery_photo:not(:hover){
+    transform: scale(0.9);
+}
+
+.benthota-photo .ben-gala .ben-gala-1{
+    top: 10%;
+    right: 80%;
+    z-index: 2;
+}
+.benthota-photo .ben-gala .ben-gala-2{
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.benthota-photo .ben-gala .ben-gala-3{
+    top: 60px;
+    right: 20%;
+    padding-left: 10px;
+}
+.benthota-photo .ben-gala .ben-gala-4{
+    top: 140px;
+    right: 40%;
+}
+
+.benthota-photo .ben-gala .ben-gala-5{
+    top: 60px;
+    right: 60%;
+    z-index: 2;
+}
+.discript{
+    margin-top: 40%;
+}
+
+.discript .firpara{
+margin-top: 50px;
+width: 50%;
+margin-left: 25%;
+background-color: #f8f8f8;
+
+}
+
+.discript .firpara h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 6px;
+    text-align: center;
+   
+
+}
+
+.discript .firpara p{
+   
+    font-size: 18px;
+   padding-top: 20px;
+    text-align: justify;
+padding-bottom: 50px;
+margin: 10%;
+margin-top: 3%;
+
+}
+
+.map .mappp{
+    width: 100%;
+}
+
+.map{
+    max-width: 100%;
+    border: 10px;
+    border-color: red;
+    padding-top: 20px;
+    padding-bottom: 480px;
+    /* padding-left: 200px; */
+    height: 100px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-height:800px)
+{
+    footer{
+        position: static;
+    }
+    
+}
+.footer-distributed{
+    background-color: #023e7a;
+    box-sizing: border-box;
+    widows: 100%;
+    /* text-align: center; */
+    font: bold 16px sans-serif;
+    padding-top: 10px;
+    margin-top: 2%;
+   
+    width: 100%;
+
+}
+
+.footer-distributed .footer-left{
+    padding-left: 20px;
+    }
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+    vertical-align: left;
+
+
+}
+.footer-distributed .footer-left{
+    width: 30%;
+    text-align: left;
+    
+    
+}
+
+  
+@media screen and (max-width: 600px){
+    .footer-distributed .footer-left{
+        margin-bottom: 10%;
+        text-align: center;
+        margin-left: 35%;
+       
+    }
+    .footer-distributed .footer-center{
+        margin-bottom: 10%;
+        text-align: center;
+        margin-left: 35%;
+       
+    }
+
+    .footer-distributed .footer-right{
+       
+        text-align: center;
+        margin-left: 35%;
+    }
+
+
+       
+    }
+.footer-distributed h3{
+    color: #ffff;
+    font: normal 36px 'cookie', cursive;
+    margin: 0;
+}
+.footer-distributed h3 span{
+    color: orange;
+}
+.footer-distributed .footer-links{
+    color: #fff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name{
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+.footer-distributed .footer-center{
+    width: 35%;
+    text-align: center;
+}
+
+.footer-distributed .footer-center i{
+    background-color: #33383b;
+    color: #ffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+.footer-distributed .footer-center p{
+    display: inline-block;
+    color: #fff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center i .fo-envelope{
+    font-size: 17px;
+    line-height: 38px;
+}
+.footer-distributed .footer-center p span{
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+.footer-distributed .footer-center p a{
+    color: orange;
+    text-decoration: none;
+}
+
+.footer-distributed .footer-right{
+    width: 30%;
+    text-align: right;
+    padding-top: 30px;
+}
+
+.footer-distributed .footer-company-about{
+    line-height: 20px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+    
+    size: 100px;
+    
+
+}
+
+.footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+
+}
+
+.footer-distributed .footer-icons a:hover{
+    background-color: rgb(250, 248, 246);
+}
+
+.footer-links a:hover{
+    color: blue;
+}
+
+@media(max-width: 600px){
+    .footer-distributed .footer-links, .footer-distributed .footer-center, .footer-distributed .footer-right{
+        display: block;
+        
+        
+        text-align: center;
+    }
+    .footer-distributed .footer-center i{
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+
+/* 712*/
+
+@media screen and (max-width: 712px) {
+    .container {
+        width: 100%;
+    }
+
+    .container .logoo img{
+        display: none;
+    }
+
+    .mobnave {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+    .header ul li h1{
+        font-size: 14px;
+        padding-left: 850px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .header ul{
+        margin-left: -55%;
+      
+    }
+
+    .header h1::after {
+       display: none;
+    }
+    .navbar {
+        background-color: #0072a8;
+       padding: 5px;
+    }
+
+  
+    .allrl{
+        margin-top: 60%;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+        display: block;
+        margin-bottom: 125%;
+        
+    }
+    .allrl .eeeee img{
+        width: 100%;
+        margin-top: 10%;
+      
+    }
+    .allrl .eeeee .needhelp{
+        margin-top: 10%;
+            width: 90%;
+            
+        
+    }
+    
+    
+    .benthota-photo .ben-gala .gallery_photo{
+        display: none;
+     
+
+    }
+.benthota-photo{
+    display: block;
+    
+}
+
+.benthota-photo .ben-gala{
+    display: block;
+}
+.discript .firpara h1{
+    font-size: 18px;
+}
+.discript {
+    width: 100%;
+}
+
+
+}
+
+/* 300 */
+@media screen and (max-width: 380px) {
+    .container {
+        width: 100%;
+    }
+
+    .container .logoo img{
+        display: none;
+    }
+
+    .mobnave {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+    .header ul li h1{
+        font-size: 20px;
+      letter-spacing: normal;
+      margin-left: -120%;
+        padding-bottom: 20px;
+        text-align: center;
+        
+    }
+    .header ul{
+        margin-left: -50%;
+        width: 100%;
+      
+    }
+
+    .header h1::after {
+       display: none;
+    }
+    .navbar {
+        background-color: #0072a8;
+       padding: 5px;
+    }
+
+    .benthota-photo .ben-gala .gallery_photo{
+        display: none;
+     
+
+    }
+.benthota-photo{
+    display: block;
+    
+}
+
+.benthota-photo .ben-gala{
+    display: block;
+}
+.discript .firpara h1{
+    font-size: 18px;
+}
+.discript {
+    width: 100%;
+}
+
+
+}
+
