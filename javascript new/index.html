@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Ticket</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+
+  <link rel="stylesheet" type="text/css" href="ccc.css">
+
+  <link rel="stylesheet" href="international-telephone-input.css">
+
+</head>
+
+<body>
+
+
+
+  <div class="main">
+    <div class="buytick">
+      <a id="home" href="#">&#127968 Home</a>
+
+      <h1>Buy Tickets</h1>
+    </div>
+    <div class="page">
+
+      <ul>
+        <li><a href="#home">Tickets</a></li>
+
+        <li><a href="details.html">Details</a></li>
+
+        <li><a href="pay.html">Payment</a></li>
+        <li><a href="conf.html">Confirmation</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- calender -->
+  <!-- <div class="deatail"> -->
+
+  <div class="M1">
+
+    <h2>Step 01<img id="ar" src="arrow.png">When are you visiting ?</h2>
+
+    <BR>
+
+
+    <div class="wrapper">
+      <header>
+        <p class="current-date"></p>
+        <div class="icons">
+          <span id="prev" class="material-symbols-rounded">chevron_left</span>
+          <span id="next" class="material-symbols-rounded">chevron_right</span>
+        </div>
+      </header>
+      <div class="calendar">
+        <ul class="weeks">
+          <li>Sun</li>
+          <li>Mon</li>
+          <li>Tue</li>
+          <li>Wed</li>
+          <li>Thu</li>
+          <li>Fri</li>
+          <li>Sat</li>
+        </ul>
+        <ul class="days"></ul>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <br>
+
+    <h2>Step 02<img id="ar" src="arrow.png">Mention the time </h2>
+    <br>
+    <!-- <div class="tt">
+      <table>
+        <tr>
+          <th>Type</th>
+          <th>Lastname</th>
+          <th>Lastname</th>
+        </tr>
+        <tr>
+          <td>Normal</td>
+          <td>Foreigner Adult </td>
+          <td>10 USD </td>
+        </tr>
+        <tr>
+          <td>Peak</td>
+          <td>Foreigner Adult </td>
+          <td>13 USD </td>
+        </tr>
+        <tr>
+          <td>Normal</td>
+          <td>Foreigner Child </td>
+          <td>5 USD </td>
+        </tr>
+        <tr>
+          <td>Peak</td>
+          <td>Foreigner Child </td>
+          <td>8 USD </td>
+        </tr>
+        <tr>
+          <td>Normal</td>
+          <td>SL Adult </td>
+          <td>14 USD </td>
+        </tr>
+        <tr>
+          <td>Peak</td>
+          <td>SL Adult </td>
+          <td>6 USD </td>
+        </tr>
+        <tr>
+          <td>Normal</td>
+          <td>SL Child</td>
+          <td>2 USD </td>
+        </tr>
+        <tr>
+          <td>Peak</td>
+          <td>SL Child </td>
+          <td>3 USD </td>
+        </tr>
+      </table>
+    </div>
+    Duration -->
+
+
+    <div class="table-container">
+      <table class="responsive-table">
+        <thead>
+          
+        </thead>
+        <tbody>
+          <tr>
+            <td>Normal</td>
+          <td>Foreigner Adult </td>
+          <td>10 USD </td>
+          </tr><tr>
+            <td>Peak</td>
+            <td>Foreigner Adult </td>
+            <td>13 USD </td>
+          </tr>
+          <tr>
+            <td>Normal</td>
+            <td>Foreigner Child </td>
+            <td>5 USD </td>
+          </tr>
+          <tr>
+            <td>Peak</td>
+            <td>Foreigner Child </td>
+            <td>8 USD </td>
+          </tr>
+          <tr>
+            <td>Normal</td>
+            <td>SL Adult </td>
+            <td>14 USD </td>
+          </tr>
+          <tr>
+            <td>Peak</td>
+            <td>SL Adult </td>
+            <td>6 USD </td>
+          </tr>
+          <tr>
+            <td>Normal</td>
+            <td>SL Child</td>
+            <td>2 USD </td>
+          </tr>
+          <tr>
+            <td>Peak</td>
+            <td>SL Child </td>
+            <td>3 USD </td>
+          </tr>
+          <!-- Repeat more rows here -->
+        </tbody>
+      </table>
+    </div>
+
+
+
+
+    <div class="dr">
+      <div class="dropdown">
+        <button class="dropbtn">Select Timelines</button>
+
+        
+
+
+        <div class="dropdown-content">
+          
+
+          <label for="mycheck1" id="box1">07.00 am - 08.00 am</label>
+          <input type="checkbox" id="mycheck1" class="cc" onclick="bb()">
+
+          <label for="mycheck2" id="box2">08.00 am - 09.00 am</label>
+          <input type="checkbox" id="mycheck2" class="cc" onclick="bb()">
+
+          <label for="mycheck3" id="box3">09.00 am - 10.00 am</label>
+          <input type="checkbox" id="mycheck3" class="cc" onclick="bb()">
+
+          <label for="mycheck4p" id="box4p" onclick=" hour()">10.00 am - 11.00 am (Peak)</label>
+          <input type="checkbox" id="mycheck4p" class="cc" onclick="bb()">
+
+          <label for="mycheck5p" id="box5p" onclick=" hour()">11.00 am - 12.00 pm (Peak)</label>
+          <input type="checkbox" id="mycheck5p" class="cc" onclick="bb()">
+
+          <label for="mycheck6p" id="box6p" onclick=" hour()">12.00 pm - 01.00 pm (Peak)</label>
+          <input type="checkbox" id="mycheck6p" class="cc" onclick="bb()">
+
+          <label for="mycheck7" id="box7" onclick=" hour()">01.00 pm - 02.00 pm</label>
+          <input type="checkbox" id="mycheck7" class="cc" onclick="bb()">
+
+          <label for="mycheck8" id="box8" onclick=" hour()">02.00 pm - 03.00 pm</label>
+          <input type="checkbox" id="mycheck8" class="cc" onclick="bb()">
+
+          <label for="mycheck9p" id="box9p" onclick=" hour()">03.00 pm - 04.00 pm (Peak)</label>
+          <input type="checkbox" id="mycheck9p" class="cc" onclick="bb()">
+
+          <label for="mycheck10p" id="box10p" onclick=" hour()">04.00 pm - 05.00 pm (Peak)</label>
+          <input type="checkbox" id="mycheck10p" class="cc" onclick="bb()">
+
+          <label for="mycheck11p" id="box11p" onclick=" hour()">05.00 pm - 06.00 pm (Peak)</label>
+          <input type="checkbox" id="mycheck11p" class="cc" onclick="bb()">
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- guest -->
+<br>
+
+  </div>
+
+  <div class="M2">
+
+
+    <h2>Step 03<img id="ar" src="arrow.png"></h2>
+
+    <div class="g" id="vv">
+      <div class="guestt">
+        <div class="cn">
+          <div class="hh">
+            <P>SL Adult</P>
+            <p class="downd">Above 15 yrs</p>
+          </div>
+          <div class="bu">
+            <button type="button" onclick="g1m()">-</button>
+            <span id="count1"></span>
+            <button type="button" onclick="g1p()">+</button>
+          </div>
+        </div>
+      </div><br>
+
+      <div class="guestt">
+        <div class="cn">
+          <div class="hh">
+            <P>SL Child </P>
+            <p class="downd">5 to 14 yrs</p>
+          </div>
+          <div class="bu">
+            <button type="button" onclick="g2m()">-</button>
+            <span id="count2"></span>
+            <button type="button" onclick="g2p()">+</button>
+          </div>
+        </div>
+      </div><br>
+
+      <div class="guestt">
+        <div class="cn">
+          <div class="hh">
+            <P>Foreigner Adult</P>
+            <p class="downd">Above 15 yrs</p>
+          </div>
+          <div class="bu">
+            <button type="button" onclick="g3m()">-</button>
+            <span id="count3"></span>
+            <button type="button" onclick="g3p()">+</button>
+          </div>
+        </div>
+      </div><br>
+
+      <div class="guestt">
+        <div class="cn">
+          <div class="hh">
+            <P>Foreigner Child</P>
+            <p class="downd">5 to 14 yrs</p>
+          </div>
+          <div class="bu">
+            <button type="button" onclick="g4m()">-</button>
+            <span id="count4"></span>
+            <button type="button" onclick="g4p()">+</button>
+          </div>
+        </div>
+      </div><br>
+
+      <div class="guestt">
+        <div class="cn">
+          <div class="hh">
+            <P>Infant</P>
+            <p class="downd">Under 4 yrs</p>
+          </div>
+          <div class="bu">
+            <button type="button" onclick="g5m()">-</button>
+            <span id="count5"></span>
+            <button type="button" onclick="g5p()">+</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="table-di">
+    <table id="customerss" >
+
+      <tr>
+        <td>Date</td>
+        <td id="date"></td>
+
+      </tr>
+      <tr>
+        <td>Time</td>
+        <td id="ti"></td>
+
+      </tr>
+      <tr>
+        <td>Duration</td>
+        <td id="hrs"></td>
+
+      </tr>
+      <tr>
+        <th>Tickets</th>
+        <th>Charges</th>
+
+      </tr>
+      <tr id="qw">
+        <td>1 Foreigner Adult</td>
+        <td>$10</td>
+
+      </tr>
+      <tr style="display: none" id="sla">
+        <td id="slat1"></td>
+        <td id="slat2"></td>
+
+      </tr>
+      <tr style="display: none" id="slc">
+        <td id="slct1"></td>
+        <td id="slct2"></td>
+
+      </tr>
+      <tr style="display: none" id="fa">
+        <td id="fat1"></td>
+        <td id="fat2"></td>
+
+      </tr>
+      <tr style="display: none" id="fc">
+        <td id="fct1"></td>
+        <td id="fct2"></td>
+
+
+      </tr>
+
+      <tr id="totl">
+        <td id="t1">Total</td>
+        <td id="t2"></td>
+
+
+      </tr>
+
+      <tr>
+        <td>Payment</td>
+        <td><a href="details.html"><button id="payy" onclick="next()">PAY</button></a></td>
+
+
+      </tr>
+    </table>
+  </div>
+
+  <!--Purchase  -->
+
+
+
+
+  </div>
+
+  </p>
+  </div>
+
+<footer class="footer">
+  
+  <div class="footer-bottom">
+    <p>&copy; 2023 Turtle Hatcheries In Sri Lanka.</p>
+  </div>
+</footer>
+
+
+
+  <script src="main.js" type="text/javascript"></script>
+</body>
+
+</html>
