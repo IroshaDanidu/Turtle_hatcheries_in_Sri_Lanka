@@ -1,6 +1,6 @@
 
 
-if (window.location.href == "http://127.0.0.1:5501/index.html") {
+if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in_Sri_Lanka/javascript%20new/index.html") {
 
 
     const daysTag = document.querySelector(".days"),
@@ -1397,7 +1397,7 @@ if (window.location.href == "http://127.0.0.1:5501/index.html") {
 // 
 
 
-if (window.location.href == "http://127.0.0.1:5501/details.html") {
+if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in_Sri_Lanka/javascript%20new/details.html") {
 
     document.getElementById("date").innerText = sessionStorage.getItem("table-date");
     document.getElementById("ti").innerText = sessionStorage.getItem("table-time");
@@ -1584,7 +1584,7 @@ if (window.location.href == "http://127.0.0.1:5501/details.html") {
 
 // con page
 
-if (window.location.href == "http://127.0.0.1:5501/conf.html") {
+if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in_Sri_Lanka/javascript%20new/conf.html") {
 
     document.getElementById("date").innerText = sessionStorage.getItem("table-date");
     document.getElementById("ti").innerText = sessionStorage.getItem("table-time");
@@ -1673,7 +1673,7 @@ if (window.location.href == "http://127.0.0.1:5501/conf.html") {
 
 // payment page
 
-if (window.location.href == "http://127.0.0.1:5501/pay.html") {
+if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in_Sri_Lanka/javascript%20new/pay.html") {
 
 document.getElementById('comform').innerText = `PAY ${sessionStorage.getItem("local-tot")}`;
 
