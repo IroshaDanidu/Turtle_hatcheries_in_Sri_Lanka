@@ -1,6 +1,6 @@
 
 
-if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in_Sri_Lanka/javascript%20new/index.html") {
+if (window.location.href == "http://127.0.0.1:5501/index.html") {
 
 
     const daysTag = document.querySelector(".days"),
@@ -131,20 +131,20 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
     let normal=hourr-peakcount; */
 
     let intial1 = 0;
-    sessionStorage.setItem("sl-a", intial1);
+    localStorage.setItem("sl-a", intial1);
     let intial2 = 0;
-    sessionStorage.setItem("sl-ch", intial2);
+    localStorage.setItem("sl-ch", intial2);
     let intial3 = 0;
-    sessionStorage.setItem("f-a", intial3);
+    localStorage.setItem("f-a", intial3);
     let intial4 = 0;
-    sessionStorage.setItem("f-c", intial4);
+    localStorage.setItem("f-c", intial4);
 
 
     function g1p() {
 
         let slacharge1 = 0;
-        let normal = (sessionStorage.getItem("local-hour")) - (sessionStorage.getItem("local-peakcount"));
-        let peakcount = (sessionStorage.getItem("local-peakcount"));
+        let normal = (localStorage.getItem("local-hour")) - (localStorage.getItem("local-peakcount"));
+        let peakcount = (localStorage.getItem("local-peakcount"));
         data1 = data1 + 1;
         document.getElementById('count1').innerText = data1;
 
@@ -156,9 +156,9 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
         slacharge1 = data1 * ((4 * normal) + (6 * peakcount));
         document.getElementById('slat2').innerText = `$${slacharge1}`;
 
-        sessionStorage.setItem("sl-a", slacharge1);
+        localStorage.setItem("sl-a", slacharge1);
 
-        let total = (parseInt(sessionStorage.getItem("sl-a")) + parseInt(sessionStorage.getItem("sl-ch")) + parseInt(sessionStorage.getItem("f-a")) + parseInt(sessionStorage.getItem("f-c")));
+        let total = (parseInt(localStorage.getItem("sl-a")) + parseInt(localStorage.getItem("sl-ch")) + parseInt(localStorage.getItem("f-a")) + parseInt(localStorage.getItem("f-c")));
 
 
         document.getElementById('t2').innerText = `$${total}`;
@@ -170,7 +170,7 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
 
 
 
-    // sessionStorage.setItem("local-hour", hourr);
+    // localStorage.setItem("local-hour", hourr);
     function g1m() {
 
         if (data1 == 0) {
@@ -178,8 +178,8 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
         }
         else {
             let slacharge1 = 0;
-            let normal = (sessionStorage.getItem("local-hour")) - (sessionStorage.getItem("local-peakcount"));
-            let peakcount = (sessionStorage.getItem("local-peakcount"));
+            let normal = (localStorage.getItem("local-hour")) - (localStorage.getItem("local-peakcount"));
+            let peakcount = (localStorage.getItem("local-peakcount"));
 
             data1 = data1 - 1;
             document.getElementById('count1').innerText = data1;
@@ -189,13 +189,13 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
 
             document.getElementById('sla').style.display = "";
             document.getElementById('slat1').innerText = `${data1} SL Adult`;
-            sessionStorage.setItem("local-slat1", `${data1} SL Adult`);
+            localStorage.setItem("local-slat1", `${data1} SL Adult`);
             slacharge1 = data1 * ((4 * normal) - (6 * peakcount));
             document.getElementById('slat2').innerText = `$${slacharge1}`;
 
-            sessionStorage.setItem("sl-a", slacharge1);
+            localStorage.setItem("sl-a", slacharge1);
 
-            let total = (parseInt(sessionStorage.getItem("sl-a")) + parseInt(sessionStorage.getItem("sl-ch")) + parseInt(sessionStorage.getItem("f-a")) + parseInt(sessionStorage.getItem("f-c")));
+            let total = (parseInt(localStorage.getItem("sl-a")) + parseInt(localStorage.getItem("sl-ch")) + parseInt(localStorage.getItem("f-a")) + parseInt(localStorage.getItem("f-c")));
 
             document.getElementById('t2').innerText = `$${total}`;
 
@@ -208,8 +208,8 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
 
         let slacharge2 = 0;
 
-        let normal = (sessionStorage.getItem("local-hour")) - (sessionStorage.getItem("local-peakcount"));
-        let peakcount = (sessionStorage.getItem("local-peakcount"));
+        let normal = (localStorage.getItem("local-hour")) - (localStorage.getItem("local-peakcount"));
+        let peakcount = (localStorage.getItem("local-peakcount"));
 
 
         data2 = data2 + 1;
@@ -223,9 +223,9 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
         slacharge2 = data2 * ((2 * normal) + (3 * peakcount));
         document.getElementById('slct2').innerText = `$${slacharge2}`;
 
-        sessionStorage.setItem("sl-ch", slacharge2);
+        localStorage.setItem("sl-ch", slacharge2);
 
-        let total = (parseInt(sessionStorage.getItem("sl-a")) + parseInt(sessionStorage.getItem("sl-ch")) + parseInt(sessionStorage.getItem("f-a")) + parseInt(sessionStorage.getItem("f-c")));
+        let total = (parseInt(localStorage.getItem("sl-a")) + parseInt(localStorage.getItem("sl-ch")) + parseInt(localStorage.getItem("f-a")) + parseInt(localStorage.getItem("f-c")));
 
         document.getElementById('t2').innerText = `$${total}`;
 
@@ -237,8 +237,8 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
         }
         else {
             let slacharge2 = 0;
-            let normal = (sessionStorage.getItem("local-hour")) - (sessionStorage.getItem("local-peakcount"));
-            let peakcount = (sessionStorage.getItem("local-peakcount"));
+            let normal = (localStorage.getItem("local-hour")) - (localStorage.getItem("local-peakcount"));
+            let peakcount = (localStorage.getItem("local-peakcount"));
 
             data2 = data2 - 1;
             document.getElementById('count2').innerText = data2;
@@ -251,9 +251,9 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
             slacharge2 = data2 * ((2 * normal) - (3 * peakcount));
             document.getElementById('slct2').innerText = `$${slacharge2}`;
 
-            sessionStorage.setItem("sl-ch", slacharge2);
+            localStorage.setItem("sl-ch", slacharge2);
 
-            let total = (parseInt(sessionStorage.getItem("sl-a")) + parseInt(sessionStorage.getItem("sl-ch")) + parseInt(sessionStorage.getItem("f-a")) + parseInt(sessionStorage.getItem("f-c")));
+            let total = (parseInt(localStorage.getItem("sl-a")) + parseInt(localStorage.getItem("sl-ch")) + parseInt(localStorage.getItem("f-a")) + parseInt(localStorage.getItem("f-c")));
 
             document.getElementById('t2').innerText = `$${total}`;
 
@@ -269,8 +269,8 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
     function g3p() {
         let slacharge3 = 0;
 
-        let normal = (sessionStorage.getItem("local-hour")) - (sessionStorage.getItem("local-peakcount"));
-        let peakcount = (sessionStorage.getItem("local-peakcount"));
+        let normal = (localStorage.getItem("local-hour")) - (localStorage.getItem("local-peakcount"));
+        let peakcount = (localStorage.getItem("local-peakcount"));
 
 
 
@@ -285,9 +285,9 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
         slacharge3 = data3 * ((10 * normal) + (13 * peakcount));
         document.getElementById('fat2').innerText = `$${slacharge3}`;
 
-        sessionStorage.setItem("f-a", slacharge3);
+        localStorage.setItem("f-a", slacharge3);
 
-        let total = (parseInt(sessionStorage.getItem("sl-a")) + parseInt(sessionStorage.getItem("sl-ch")) + parseInt(sessionStorage.getItem("f-a")) + parseInt(sessionStorage.getItem("f-c")));
+        let total = (parseInt(localStorage.getItem("sl-a")) + parseInt(localStorage.getItem("sl-ch")) + parseInt(localStorage.getItem("f-a")) + parseInt(localStorage.getItem("f-c")));
 
         document.getElementById('t2').innerText = `$${total}`;
 
@@ -299,8 +299,8 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
         }
         else {
             let slacharge3 = 0;
-            let normal = (sessionStorage.getItem("local-hour")) - (sessionStorage.getItem("local-peakcount"));
-            let peakcount = (sessionStorage.getItem("local-peakcount"));
+            let normal = (localStorage.getItem("local-hour")) - (localStorage.getItem("local-peakcount"));
+            let peakcount = (localStorage.getItem("local-peakcount"));
 
 
             data3 = data3 - 1;
@@ -313,9 +313,9 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
             slacharge3 = data3 * ((10 * normal) - (13 * peakcount));
             document.getElementById('fat2').innerText = `$${slacharge3}`;
 
-            sessionStorage.setItem("f-a", slacharge3);
+            localStorage.setItem("f-a", slacharge3);
 
-            let total = (parseInt(sessionStorage.getItem("sl-a")) + parseInt(sessionStorage.getItem("sl-ch")) + parseInt(sessionStorage.getItem("f-a")) + parseInt(sessionStorage.getItem("f-c")));
+            let total = (parseInt(localStorage.getItem("sl-a")) + parseInt(localStorage.getItem("sl-ch")) + parseInt(localStorage.getItem("f-a")) + parseInt(localStorage.getItem("f-c")));
 
             document.getElementById('t2').innerText = `$${total}`;
         }
@@ -326,8 +326,8 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
 
     function g4p() {
         let slacharge4 = 0;
-        let normal = (sessionStorage.getItem("local-hour")) - (sessionStorage.getItem("local-peakcount"));
-        let peakcount = (sessionStorage.getItem("local-peakcount"));
+        let normal = (localStorage.getItem("local-hour")) - (localStorage.getItem("local-peakcount"));
+        let peakcount = (localStorage.getItem("local-peakcount"));
 
 
         data4 = data4 + 1;
@@ -341,9 +341,9 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
         slacharge4 = data4 * ((5 * normal) + (8 * peakcount));
         document.getElementById('fct2').innerText = `$${slacharge4}`;
 
-        sessionStorage.setItem("f-c", slacharge4);
+        localStorage.setItem("f-c", slacharge4);
 
-        let total = (parseInt(sessionStorage.getItem("sl-a")) + parseInt(sessionStorage.getItem("sl-ch")) + parseInt(sessionStorage.getItem("f-a")) + parseInt(sessionStorage.getItem("f-c")));
+        let total = (parseInt(localStorage.getItem("sl-a")) + parseInt(localStorage.getItem("sl-ch")) + parseInt(localStorage.getItem("f-a")) + parseInt(localStorage.getItem("f-c")));
 
         document.getElementById('t2').innerText = `$${total}`;
     }
@@ -354,8 +354,8 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
         }
         else {
             let slacharge4 = 0;
-            let normal = (sessionStorage.getItem("local-hour")) - (sessionStorage.getItem("local-peakcount"));
-            let peakcount = (sessionStorage.getItem("local-peakcount"));
+            let normal = (localStorage.getItem("local-hour")) - (localStorage.getItem("local-peakcount"));
+            let peakcount = (localStorage.getItem("local-peakcount"));
 
 
             data4 = data4 - 1;
@@ -368,9 +368,9 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
             slacharge4 = data4 * ((5 * normal) - (8 * peakcount));
             document.getElementById('fct2').innerText = `$${slacharge4}`;
 
-            sessionStorage.setItem("f-c", slacharge4);
+            localStorage.setItem("f-c", slacharge4);
 
-            let total = (parseInt(sessionStorage.getItem("sl-a")) + parseInt(sessionStorage.getItem("sl-ch")) + parseInt(sessionStorage.getItem("f-a")) + parseInt(sessionStorage.getItem("f-c")));
+            let total = (parseInt(localStorage.getItem("sl-a")) + parseInt(localStorage.getItem("sl-ch")) + parseInt(localStorage.getItem("f-a")) + parseInt(localStorage.getItem("f-c")));
 
             document.getElementById('t2').innerText = `$${total}`;
 
@@ -660,7 +660,7 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
         }
 
 
-        sessionStorage.setItem("local-peakcount", peakcount);
+        localStorage.setItem("local-peakcount", peakcount);
 
 
         /* let hourr = 0;
@@ -925,7 +925,7 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
 
 
 
-        sessionStorage.setItem("local-hour", hourr);
+        localStorage.setItem("local-hour", hourr);
 
         let displyhHourr = `${hourr} hrs`
         document.getElementById('hrs').innerText = displyhHourr;
@@ -1314,7 +1314,7 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
 
         let timeString = `${timestartString} to ${timestopString}`
 
-        sessionStorage.setItem('local-ti', timeString)
+        localStorage.setItem('local-ti', timeString)
 
         document.getElementById('ti').innerText = timeString;
 
@@ -1349,42 +1349,42 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
     function next() {
 
         let tableDate = document.getElementById("date").innerText;
-        sessionStorage.setItem("table-date", tableDate);
+        localStorage.setItem("table-date", tableDate);
         let tableTime = document.getElementById("ti").innerText;
-        sessionStorage.setItem("table-time", tableTime);
+        localStorage.setItem("table-time", tableTime);
         let tableDuration = document.getElementById("hrs").innerText;
-        sessionStorage.setItem("table-duration", tableDuration);
+        localStorage.setItem("table-duration", tableDuration);
 
 
         let tableCharge1 = document.getElementById("slat2").innerText;
-        sessionStorage.setItem("table-slaC", tableCharge1);
+        localStorage.setItem("table-slaC", tableCharge1);
 
 
         let tableCharge2 = document.getElementById("slct2").innerText;
-        sessionStorage.setItem("table-slcC", tableCharge2);
+        localStorage.setItem("table-slcC", tableCharge2);
 
 
         let tableCharge3 = document.getElementById("fat2").innerText;
-        sessionStorage.setItem("table-fatC", tableCharge3);
+        localStorage.setItem("table-fatC", tableCharge3);
 
 
         let tableCharge4 = document.getElementById("fct2").innerText;
-        sessionStorage.setItem("table-fctC", tableCharge4);
+        localStorage.setItem("table-fctC", tableCharge4);
 
 
 
 
-        sessionStorage.setItem("table-name1", document.getElementById('slat1').innerText);
-        sessionStorage.setItem("table-name2", document.getElementById('slct1').innerText);
-        sessionStorage.setItem("table-name3", document.getElementById('fat1').innerText);
-        sessionStorage.setItem("table-name4", document.getElementById('fct1').innerText);
+        localStorage.setItem("table-name1", document.getElementById('slat1').innerText);
+        localStorage.setItem("table-name2", document.getElementById('slct1').innerText);
+        localStorage.setItem("table-name3", document.getElementById('fat1').innerText);
+        localStorage.setItem("table-name4", document.getElementById('fct1').innerText);
 
 
 
 
 
 
-        sessionStorage.setItem("local-tot", document.getElementById('t2').innerText);
+        localStorage.setItem("local-tot", document.getElementById('t2').innerText);
 
 
     }
@@ -1397,33 +1397,33 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
 // 
 
 
-if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in_Sri_Lanka/javascript%20new/details.html") {
+if (window.location.href == "http://127.0.0.1:5501/details.html") {
 
-    document.getElementById("date").innerText = sessionStorage.getItem("table-date");
-    document.getElementById("ti").innerText = sessionStorage.getItem("table-time");
-    document.getElementById("hrs").innerText = sessionStorage.getItem("table-duration");
-
-
-
-
-    document.getElementById("t2").innerText = sessionStorage.getItem("local-tot");
+    document.getElementById("date").innerText = localStorage.getItem("table-date");
+    document.getElementById("ti").innerText = localStorage.getItem("table-time");
+    document.getElementById("hrs").innerText = localStorage.getItem("table-duration");
 
 
 
 
-    document.getElementById("slat1").innerText = sessionStorage.getItem("table-name1");
-    document.getElementById("slat2").innerText = sessionStorage.getItem("table-slaC");
-
-    document.getElementById("slct1").innerText = sessionStorage.getItem("table-name2");
-    document.getElementById("slct2").innerText = sessionStorage.getItem("table-slcC");
+    document.getElementById("t2").innerText = localStorage.getItem("local-tot");
 
 
-    document.getElementById("fat1").innerText = sessionStorage.getItem("table-name3");
-    document.getElementById("fat2").innerText = sessionStorage.getItem("table-fatC");
 
 
-    document.getElementById("fct1").innerText = sessionStorage.getItem("table-name4");
-    document.getElementById("fct2").innerText = sessionStorage.getItem("table-fctC");
+    document.getElementById("slat1").innerText = localStorage.getItem("table-name1");
+    document.getElementById("slat2").innerText = localStorage.getItem("table-slaC");
+
+    document.getElementById("slct1").innerText = localStorage.getItem("table-name2");
+    document.getElementById("slct2").innerText = localStorage.getItem("table-slcC");
+
+
+    document.getElementById("fat1").innerText = localStorage.getItem("table-name3");
+    document.getElementById("fat2").innerText = localStorage.getItem("table-fatC");
+
+
+    document.getElementById("fct1").innerText = localStorage.getItem("table-name4");
+    document.getElementById("fct2").innerText = localStorage.getItem("table-fctC");
 
 
 
@@ -1474,7 +1474,7 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
 
     function pickGender(selectedGender) {
         let pickedGender = selectedGender.options[selectedGender.selectedIndex].text;
-        sessionStorage.setItem("fgender", pickedGender);
+        localStorage.setItem("fgender", pickedGender);
     }
 
 
@@ -1483,23 +1483,24 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
 
 
         let name = document.getElementById("namefull").value;
+        console.log(name)
         let number = document.getElementById("phone").value;
         let mail = document.getElementById("emaila").value;
         /*         let gm = document.getElementById("m").value;
                 let gf = document.getElementById("f").value; */
 
-        sessionStorage.setItem("fname", name);
-        sessionStorage.setItem("fnumber", number);
-        sessionStorage.setItem("fmail", mail);
-        /*         sessionStorage.setItem("gender-male", gm);
-                sessionStorage.setItem("gender-fmail", gf); */
-    
+        localStorage.setItem("fname", name);
+        localStorage.setItem("fnumber", number);
+        localStorage.setItem("fmail", mail);
+        /*         localStorage.setItem("gender-male", gm);
+                localStorage.setItem("gender-fmail", gf); */
 
 
 
 
-    // validate
-    
+
+        // validate
+
         let namefull = document.getElementById('namefull');
         let phone = document.getElementById('phone');;
         let emaila = document.getElementById('emaila');;
@@ -1514,25 +1515,25 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
 
 
         if (emaila.value.trim() === "") {
-            onErro(emaila, )
-        } else{
-            if(emaila.value.trim()!==conemail.value.trim()){
-                onError(conPwd,"Email not matching");
-             }
-            if(!isValidEmail(emaila.value.trim())){
-                onError(emaila,"Email is not valid");
-            }else{
+            onErro(emaila,)
+        } else {
+            if (emaila.value.trim() !== conemail.value.trim()) {
+                onError(conPwd, "Email not matching");
+            }
+            if (!isValidEmail(emaila.value.trim())) {
+                onError(emaila, "Email is not valid");
+            } else {
                 onSuccess(emaila);
             }
         }
-        
+
         if (conemail.value.trim() === "") {
-            onErro(conemail, )
-        } else{
-            
-            if(!isValidEmail(conemail.value.trim())){
-                onError(conemail,"Email is not valid");
-            }else{
+            onErro(conemail,)
+        } else {
+
+            if (!isValidEmail(conemail.value.trim())) {
+                onError(conemail, "Email is not valid");
+            } else {
                 onSuccess(conemail);
             }
         }
@@ -1574,43 +1575,43 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
 
 
 
-    function isValidEmail(email){
+    function isValidEmail(email) {
         return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
-     }
-     
+    }
+
 
 
 }
 
 // con page
 
-if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in_Sri_Lanka/javascript%20new/conf.html") {
+if (window.location.href == "http://127.0.0.1:5501/conf.html") {
 
-    document.getElementById("date").innerText = sessionStorage.getItem("table-date");
-    document.getElementById("ti").innerText = sessionStorage.getItem("table-time");
-    document.getElementById("hrs").innerText = sessionStorage.getItem("table-duration");
-
-
-
-
-    document.getElementById("t2").innerText = sessionStorage.getItem("local-tot");
+    document.getElementById("date").innerText = localStorage.getItem("table-date");
+    document.getElementById("ti").innerText = localStorage.getItem("table-time");
+    document.getElementById("hrs").innerText = localStorage.getItem("table-duration");
 
 
 
 
-    document.getElementById("slat1").innerText = sessionStorage.getItem("table-name1");
-    document.getElementById("slat2").innerText = sessionStorage.getItem("table-slaC");
-
-    document.getElementById("slct1").innerText = sessionStorage.getItem("table-name2");
-    document.getElementById("slct2").innerText = sessionStorage.getItem("table-slcC");
+    document.getElementById("t2").innerText = localStorage.getItem("local-tot");
 
 
-    document.getElementById("fat1").innerText = sessionStorage.getItem("table-name3");
-    document.getElementById("fat2").innerText = sessionStorage.getItem("table-fatC");
 
 
-    document.getElementById("fct1").innerText = sessionStorage.getItem("table-name4");
-    document.getElementById("fct2").innerText = sessionStorage.getItem("table-fctC");
+    document.getElementById("slat1").innerText = localStorage.getItem("table-name1");
+    document.getElementById("slat2").innerText = localStorage.getItem("table-slaC");
+
+    document.getElementById("slct1").innerText = localStorage.getItem("table-name2");
+    document.getElementById("slct2").innerText = localStorage.getItem("table-slcC");
+
+
+    document.getElementById("fat1").innerText = localStorage.getItem("table-name3");
+    document.getElementById("fat2").innerText = localStorage.getItem("table-fatC");
+
+
+    document.getElementById("fct1").innerText = localStorage.getItem("table-name4");
+    document.getElementById("fct2").innerText = localStorage.getItem("table-fctC");
 
 
 
@@ -1661,10 +1662,10 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
 
 
 
-    document.getElementById("n1").innerHTML = sessionStorage.getItem("fname");
-    document.getElementById("mo").innerHTML = sessionStorage.getItem("fnumber");
-    document.getElementById("e").innerHTML = sessionStorage.getItem("fmail");
-    document.getElementById("gender").innerHTML = sessionStorage.getItem("fgender");
+    document.getElementById("n1").innerHTML = localStorage.getItem("fname");
+    document.getElementById("mo").innerHTML = localStorage.getItem("fnumber");
+    document.getElementById("e").innerHTML = localStorage.getItem("fmail");
+    document.getElementById("gender").innerHTML = localStorage.getItem("fgender");
 
 
 }
@@ -1673,9 +1674,9 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
 
 // payment page
 
-if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in_Sri_Lanka/javascript%20new/pay.html") {
+if (window.location.href == "http://127.0.0.1:5501/pay.html") {
 
-document.getElementById('comform').innerText = `PAY ${sessionStorage.getItem("local-tot")}`;
+    document.getElementById('comform').innerText = `PAY ${localStorage.getItem("local-tot")}`;
 
 
 
