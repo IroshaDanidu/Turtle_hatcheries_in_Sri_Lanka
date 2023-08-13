@@ -1472,6 +1472,11 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
     }
 
 
+    function pickGender(selectedGender) {
+        let pickedGender = selectedGender.options[selectedGender.selectedIndex].text;
+        sessionStorage.setItem("fgender", pickedGender);
+    }
+
 
     function btnSub() {
 
@@ -1488,18 +1493,13 @@ if (window.location.href == "https://iroshadanidu.github.io/Turtle_hatcheries_in
         sessionStorage.setItem("fmail", mail);
         /*         sessionStorage.setItem("gender-male", gm);
                 sessionStorage.setItem("gender-fmail", gf); */
-    }
-
-    function pickGender(selectedGender) {
-        let pickedGender = selectedGender.options[selectedGender.selectedIndex].text;
-        sessionStorage.setItem("fgender", pickedGender);
-    }
+    
 
 
 
 
     // validate
-    function btnSub() {
+    
         let namefull = document.getElementById('namefull');
         let phone = document.getElementById('phone');;
         let emaila = document.getElementById('emaila');;
